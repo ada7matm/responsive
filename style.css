@@ -413,6 +413,8 @@ button {
 
     }
 
+    /* 1 */
+
     .avatar {
         position: absolute;
         right: 50%;
@@ -464,5 +466,6 @@ button {
 
     }
 
+    /* Fin */
 
 }
