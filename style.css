@@ -1,5 +1,14 @@
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Regular.ttf")
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("fonts/Roboto-Bold.ttf")
+}
+
 body {
-    background-color: #f5f5F5;
+    background-image: url("img/background.jpg");
 }
 
 .clear {
@@ -7,32 +16,40 @@ body {
 }
 
 .column {
-    width: 900px;
+    width: 95%;
     margin: 0 auto;
+    max-width: 900px;
 }
 
 .card {
     margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto';
 }
 
 .card-header {
     background-color: #2ECC71;
     padding: 20px;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-body {
     background-color: #FFF;
     padding: 40px 20px;
+    border-radius: 0 0 10px 10px;
+    padding: 40px;
 }
 
 .content-container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .title {
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 48px;
     text-align: center;
@@ -41,7 +58,7 @@ body {
 }
 
 .subtitle {
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 24px;
 }
@@ -60,20 +77,24 @@ body {
 .avatar {
     width: 200px;
     position: relative;
+    transform: translateX(50px);
+    border-radius: 50%;
 }
 
 .picture-container {
-    float: left;
+    position: absolute;
+    width: 200px;
 }
 
 .name-container {
     float: right;
-    width: 600px;
+    width: 80%;
     text-align: center;
+    margin: 0 0 0 50px;
 }
 
 .name {
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 54px;
     color: #FFF;
@@ -138,17 +159,19 @@ body {
     padding: 15px 20px 10px;
     margin-bottom: 20px;
     border-left: 2px solid #2ECC71;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-title {
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     font-size: 16px;
     line-height: 18px;
     margin: 0;
 }
 
 .timeline-period {
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     font-size: 12px;
     line-height: 18px;
     color: #2ECC71;
@@ -156,7 +179,7 @@ body {
 }
 
 .timeline-description {
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     font-size: 15px;
     line-height: 18px;
 }
@@ -169,12 +192,13 @@ body {
 */
 
 .service-section-container {
+    width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
 }
 
 .service-block {
-    width: 200px;
+    width: 25%;
     float: left;
     text-align: center;
     padding: 0 20px;
@@ -186,6 +210,8 @@ body {
     height: 120px;
     background-color: #FAFAFA;
     margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .service-img {
@@ -194,7 +220,7 @@ body {
 }
 
 .service-title {
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     font-size: 17px;
     line-height: 22px;
     margin-top: 40px;
@@ -207,7 +233,7 @@ body {
 }
 
 .services-client {
-    width: 80px;
+    width: 10%;
     float: left;
     margin-left: calc(800px/12 - 40px);
     margin-right: calc(800px/12 - 40px); 
@@ -215,24 +241,28 @@ body {
 
 .pricing-box {
     border: 1px solid #E0E0E0;
-    width: calc(800px / 3 - 20px);
+    width: calc(100% / 3 - 20px);
     margin: 0 10px;
     float: left;
     box-sizing: border-box;
     margin-bottom: 20px;
     padding: 20px 0;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-button {
     display: inline-block;
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     background-color: #2ECC71;
     color: #FFF;
     font-weight: bold;
     margin: 20px 0;
     padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .pricing-text {
@@ -248,13 +278,30 @@ body {
 =========================================== 
 */
 
-.portfolio-img {
+.portfolio-img-box {
     width: calc(800px / 3 - 10px);
     margin: 5px;
     float: left;
-    box-sizing: border-box;
+    position: relative;
 }
 
+.portfolio-img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-description {
+    width: 100%;
+    height: 20px;
+    background: rgba(46, 204, 112, 0.8);
+    position: absolute;
+    top: 125px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    padding: 5px 0;
+}
 
 /* 
 ===========================================
@@ -263,18 +310,22 @@ body {
 */
 
 .blog-post {
-    width: 360px;
+    width: calc(100% / 2 - 40px);
     float: left;
     margin: 20px;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
 }
 
 .blog-post-img {
-    width: 360px;
+    width: 100%;
 }
 
 .blog-post-title {
-    font-family: 'Helvetica';
+    font-family: 'Roboto';
     letter-spacing: 1px;
 }
 
@@ -286,12 +337,213 @@ body {
 =========================================== 
 */
 
+
 .contact {
-    width: 500px;
+    width: 60%;
     margin: 0 auto;
 }
 
 .contact-form {
+    width: 100%;
     margin-top: 40px;
 }
 
+.input-text {
+    font-family: 'Roboto';
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    border-left: 40px solid #f5f5f5;
+    border-bottom: 1px solid #a5a5a5;
+    padding: 0 0 0 15px;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textarea {
+    font-family: 'Roboto';
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+    border: none;
+    border-left: 40px solid #f5f5f5;
+    border-bottom: 1px solid #a5a5a5;
+    padding: 0 0 0 15px;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.send-button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: #2ECC71;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin: 20px auto;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-image:none;
+    box-sizing: border-box;
+}
+
+/* 
+===========================================
+            MEDIA QUERIES 960px
+=========================================== 
+*/
+
+@media (max-width: 960px) {
+
+    .subtitle {
+        text-align: center;
+        width: 100%;
+    }
+   
+    .picture-container {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .avatar {
+        transform: translateX(0px);
+    }
+    
+    .name-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-me {
+        width: 100%;
+        float: left;
+    }
+
+    .info {
+        width: 85%;
+        float: left;
+        margin: 0 auto;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .info-property {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-value {
+        width: 100%;
+        text-align: center;
+    }
+
+    .timeline-container {
+        float: left;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .timeline-item {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .timeline-title {
+        text-align: center;
+    }
+
+    .timeline-period {
+        text-align: center;
+    }
+
+    .timeline-description {
+        text-align: center;
+    }
+
+    .service-block {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .services-client {
+        width: calc(100% / 3 - 40px);
+        margin: 20px; 
+    }
+
+    .pricing-box {
+        margin: 30px auto;
+        width: 100%;
+        max-width: 400px;
+        float: none;
+    }
+
+    .portfolio-img-box {
+        position: relative;
+        width: 100%;
+    }
+    
+    .portfolio-description {
+        width: 100%;
+        height: 40px;
+        background: rgba(46, 204, 112, 0.8);
+        position: absolute;
+        bottom: 30px;
+        text-align: center;
+        font-weight: bold;
+        color: #FFF;
+        padding: 5px 0;
+    }
+
+    .blog-post {
+        width: calc(100% - 30px);
+    }
+
+    .contact {
+        width: 90%;
+    }
+}
+
+/* 
+===========================================
+            MEDIA QUERIES 500px
+=========================================== 
+*/
+
+@media (max-width: 500px) {
+
+    .service-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .services-client {
+        width: 70%;
+        margin: calc(30% / 2);
+    }
+
+}
