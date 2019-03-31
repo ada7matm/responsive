@@ -1,5 +1,19 @@
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: bold;
+    src: url(../responsive/fonts/Roboto-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../responsive/fonts/Roboto-Regular.ttf)
+}
+
+
 body {
     background-color: #f5f5F5;
+    background-image: url(../responsive/img/background.jpg);
 }
 
 .clear {
@@ -7,28 +21,39 @@ body {
 }
 
 .column {
-    width: 900px;
+    width: 80%;
     margin: 0 auto;
+    max-width: 900px;
 }
 
 .card {
     margin: 40px 0;
+    border-radius: 10px;
+    position: relative;
 }
 
 .card-header {
     background-color: #2ECC71;
     padding: 20px;
+    height: 149px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
     background-color: #FFF;
     padding: 40px 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+
 }
 
 .content-container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    margin-left:3%
 }
 
 .title {
@@ -60,16 +85,21 @@ body {
 .avatar {
     width: 200px;
     position: relative;
+    border-radius: 50%;
+    
 }
 
 .picture-container {
     float: left;
+    position: absolute;
+    left: 11%;
 }
 
 .name-container {
     float: right;
     width: 600px;
     text-align: center;
+    margin-right: 6%;
 }
 
 .name {
@@ -90,11 +120,13 @@ body {
 .about-me {
     width: 400px;
     float: left;
+    margin-left: 2%;
 }
 
 .description {
     font-family: 'Roboto';
     line-height: 25px;
+
 }
 
 .info {
@@ -138,6 +170,7 @@ body {
     padding: 15px 20px 10px;
     margin-bottom: 20px;
     border-left: 2px solid #2ECC71;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3)
 }
 
 .timeline-title {
@@ -171,6 +204,7 @@ body {
 .service-section-container {
     overflow: hidden;
     margin-bottom: 20px;
+    display:inline-block;
 }
 
 .service-block {
@@ -186,6 +220,8 @@ body {
     height: 120px;
     background-color: #FAFAFA;
     margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.1);
 }
 
 .service-img {
@@ -211,6 +247,7 @@ body {
     float: left;
     margin-left: calc(800px/12 - 40px);
     margin-right: calc(800px/12 - 40px); 
+
 }
 
 .pricing-box {
@@ -222,6 +259,8 @@ body {
     margin-bottom: 20px;
     padding: 20px 0;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-button {
@@ -233,6 +272,8 @@ body {
     margin: 20px 0;
     padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
 
 .pricing-text {
@@ -267,6 +308,9 @@ body {
     float: left;
     margin: 20px;
     text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
 }
 
 .blog-post-img {
@@ -287,11 +331,138 @@ body {
 */
 
 .contact {
-    width: 500px;
+    width: 60%;
     margin: 0 auto;
 }
 
 .contact-form {
     margin-top: 40px;
+    transform: translateX(-30px)
 }
 
+
+
+
+input, textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    font-family: "Roboto";
+    margin: 30px 2px; 
+    border-left: 30px solid #FAFAFA;
+    padding: 10px;
+    width: 90%;
+    display: auto;
+}
+
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    border: none;
+    background-color: #2ECC71;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transform: translateX(220px)
+}
+
+
+
+
+
+/* 
+===========================================
+            MEDIA QUERIES
+=========================================== 
+*/
+
+
+@media (max-width: 1100px) {
+    .column {
+        width: 95%
+    }
+
+@media (max-width: 960px) {
+    .card-container {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+    }
+    .picture-container, .name-container, .about-me, .info, .timeline-container, .pricing-box, .portfolio-img, .contact {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;  
+    }
+
+    .content-container {
+        width: 90%;
+        text-align: center;
+    }
+
+    .card-header {
+        height: 350px;
+
+    }
+
+    .avatar {
+        position: absolute;
+        right: 50%;
+    }
+
+    .name-container {
+        position: absolute;
+        top:225px;
+        right:1px
+    }
+
+    .timeline-container {
+        box-sizing: border-box;
+    }
+
+    .service-block {
+        width: 50%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .services-client {
+        width: 25%;
+        margin-bottom: 20px;
+        margin-left: 35px
+    }
+
+    .pricing-box {
+        padding: 20px 120px;
+        margin-bottom: 30px;
+        box-shadow: 0px 2px 10px 0px rgba 0, 0, 0, 0.2;
+    }
+
+    .portfolio-img {
+        margin-bottom: 20px;
+    }
+
+    .blog-post {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .blog-post-img {
+        width: 100%;
+    }
+
+    button {
+        transform: none;
+
+    }
+
+
+}
