@@ -53,7 +53,7 @@ body {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    margin-left:3%
+
 }
 
 .title {
@@ -358,6 +358,10 @@ input, textarea {
     display: auto;
 }
 
+textarea {
+    height: 200px;
+}
+
 button {
     appearance: none;
     -webkit-appearance: none;
@@ -403,14 +407,22 @@ button {
         margin-left: 0px;  
     }
 
+    .info-property {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .info-list {
+        margin-right: 5%;
+    }
+
     .content-container {
         width: 90%;
         text-align: center;
     }
 
-    .card-header {
+    #anavictoria {
         height: 350px;
-
     }
 
 
@@ -438,7 +450,9 @@ button {
     .services-client {
         width: 25%;
         margin-bottom: 20px;
-        margin-left: 35px
+        margin-left: 35px;
+        margin-right: 0px;
+        float: none;
     }
 
     .pricing-box {
@@ -463,6 +477,32 @@ button {
     button {
         transform: none;
 
+    }
+
+
+    @media (max-width: 500px) {
+        .avatar {
+            transform: translateX(50px);
+        }
+
+        .service-block {
+            float: none;
+            margin: 0 auto;
+        }
+
+        .services-client {
+            width: 50%;
+        }
+
+        .pricing-box {
+            padding: 20px 10px;
+        }
+
+        .blog-post {
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+    
     }
 
     /* Fin */
