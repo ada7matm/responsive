@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+
 body {
-    background-color: #f5f5F5;
+    background-image: url("img/background.jpg");
 }
 
 .clear {
@@ -63,7 +76,7 @@ body {
 }
 
 .picture-container {
-    float: left;
+    float: left; 
 }
 
 .name-container {
@@ -294,4 +307,16 @@ body {
 .contact-form {
     margin-top: 40px;
 }
+
+/* 
+===========================================
+            estilos aparte
+=========================================== 
+*/
+
+
+.card {
+    border-radius: 10px;
+}
+
 
