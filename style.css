@@ -1,6 +1,16 @@
 body {
     background-color: #f5f5F5;
 }
+@font-face{
+    font-family: "Roboto";
+    src: url("Roboto-Bold.ttf");
+}
+@font-face
+{
+    font-family: "RobotoR";
+    src: url("Roboto-Regular.ttf");
+
+}
 
 .clear {
     clear: both;
@@ -13,22 +23,32 @@ body {
 
 .card {
     margin: 40px 0;
+    box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+  
 }
 
 .card-header {
     background-color: #2ECC71;
     padding: 20px;
+    border-radius: 10px 10px 0 0;
+  
 }
 
 .card-body {
     background-color: #FFF;
     padding: 40px 20px;
+    border-radius: 0 0 10px 10px;
+  
 }
 
 .content-container {
     width: 800px;
     margin: 0 auto;
     overflow: hidden;
+    
+  
+    
 }
 
 .title {
@@ -44,6 +64,7 @@ body {
     font-family: 'Helvetica';
     font-weight: 700;
     font-size: 24px;
+    text-align: left;
 }
 
 .text {
@@ -60,10 +81,12 @@ body {
 .avatar {
     width: 200px;
     position: relative;
+    border-radius: 200%;
 }
 
 .picture-container {
     float: left;
+
 }
 
 .name-container {
@@ -81,7 +104,7 @@ body {
 }
 
 .job {
-    font-family: 'Roboto';
+    font-family: 'Helvetica';
     font-weight: bold;
     font-size: 18px;
     color: #FFF;
@@ -93,8 +116,9 @@ body {
 }
 
 .description {
-    font-family: 'Roboto';
+    font-family: Roboto;
     line-height: 25px;
+    text-align: left;
 }
 
 .info {
@@ -138,6 +162,8 @@ body {
     padding: 15px 20px 10px;
     margin-bottom: 20px;
     border-left: 2px solid #2ECC71;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    border-radius: 1px;
 }
 
 .timeline-title {
@@ -145,6 +171,7 @@ body {
     font-size: 16px;
     line-height: 18px;
     margin: 0;
+    text-align: left;
 }
 
 .timeline-period {
@@ -153,12 +180,14 @@ body {
     line-height: 18px;
     color: #2ECC71;
     margin: 0 0 20px;
+    text-align: left;
 }
 
 .timeline-description {
     font-family: 'Helvetica';
     font-size: 15px;
     line-height: 18px;
+    text-align: left;
 }
 
 
@@ -186,11 +215,15 @@ body {
     height: 120px;
     background-color: #FAFAFA;
     margin: 0 auto;
+    border-radius: 100%;
+    box-shadow: 0px 7px 12px rgba(0,0,0,0.15);
 }
 
 .service-img {
     height: 64px;
     margin: 28px 0;
+    
+
 }
 
 .service-title {
@@ -222,8 +255,13 @@ body {
     margin-bottom: 20px;
     padding: 20px 0;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
+.subtitle {
+    text-align: center;
+}
 .pricing-button {
     display: inline-block;
     font-family: 'Helvetica';
@@ -233,6 +271,8 @@ body {
     margin: 20px 0;
     padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
 
 .pricing-text {
@@ -267,6 +307,8 @@ body {
     float: left;
     margin: 20px;
     text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    border-radius: 0 3px 3px 3px;
 }
 
 .blog-post-img {
@@ -293,5 +335,13 @@ body {
 
 .contact-form {
     margin-top: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    
 }
 
+.textarea {
+  
+}

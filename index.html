@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive design</title>
+    <style> 
+            body { 
+                background-image: url("img/background.jpg");
+                background-repeat: repeat; 
+                background-size: auto; 
+                text-align:center; 
+            } 
+        </style> 
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
+        
     <div class="column">
 
         <!--    
@@ -14,6 +24,7 @@
                     ABOUT SECTION
         ======================================= 
         -->
+        
         <section class="card">
             <div class="card-header">
                 <div class="content-container">
@@ -265,13 +276,23 @@
             </div>
             <div class="card-body">
                 <div class="content-container">
+                        <form action="action_page.php">
+                                <div class="row">
                     <div class="contact">
                         <h2 class="subtitle">Escribeme</h2>
                         <form class="contact-form">
+                                <div class="col-75">
                             <input type="text" placeholder="Nombre" class="input-text">
+                           </div>
+                           <div class="col-75">
                             <input type="text" placeholder="Email" class="input-text">
+                        </div>
+                        <div class="col-75">
                             <textarea placeholder="Comentario" class="textarea"></textarea>
+                            </div>
+                            <div class="col-75">
                             <button class="send-button">Enviar</button>
+                            </div>
                         </form>
                     </div>
                 </div>
