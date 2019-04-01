@@ -1,17 +1,17 @@
 body {
     background-color: #f5f5F5;
 }
-@font-face{
-    font-family: "Roboto";
-    src: url("Roboto-Bold.ttf");
-}
-@font-face
-{
-    font-family: "RobotoR";
-    src: url("Roboto-Regular.ttf");
-
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf');
+    font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
 .clear {
     clear: both;
 }
@@ -19,6 +19,9 @@ body {
 .column {
     width: 900px;
     margin: 0 auto;
+    position: relative;
+    max-width: 900px;
+    min-width: 400px;
 }
 
 .card {
