@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
 body {
-    background-color: #f5f5F5;
+    background-image: url("img/background.jpg");
 }
 
 .clear {
@@ -7,28 +18,43 @@ body {
 }
 
 .column {
-    width: 900px;
+    width: 70%;
+    height: 95%;
     margin: 0 auto;
 }
 
 .card {
     margin: 40px 0;
+    height: 40%;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width:100%;
 }
 
 .card-header {
     background-color: #2ECC71;
     padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-body {
     background-color: #FFF;
     padding: 40px 20px;
+    height: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width:100%;
 }
 
 .content-container {
-    width: 800px;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
+    height: 80%;
 }
 
 .title {
@@ -59,7 +85,8 @@ body {
 
 .avatar {
     width: 200px;
-    position: relative;
+    position: absolute;
+    border-radius: 100px;
 }
 
 .picture-container {
@@ -88,7 +115,7 @@ body {
 }
 
 .about-me {
-    width: 400px;
+    width: 350px;
     float: left;
 }
 
@@ -130,14 +157,22 @@ body {
 
 .timeline-container {
     float: left;
-    width: 380px;
-    padding: 0 10px;
+    width: 50%;
 }
 
 .timeline-item {
     padding: 15px 20px 10px;
     margin-bottom: 20px;
     border-left: 2px solid #2ECC71;
+    box-sizing: border-box;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+    float: left;
+    width: 95%;
+}
+
+
 }
 
 .timeline-title {
@@ -186,6 +221,8 @@ body {
     height: 120px;
     background-color: #FAFAFA;
     margin: 0 auto;
+    border-radius: 60px;
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
 }
 
 .service-img {
@@ -222,6 +259,8 @@ body {
     margin-bottom: 20px;
     padding: 20px 0;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);
 }
 
 .pricing-button {
@@ -267,6 +306,8 @@ body {
     float: left;
     margin: 20px;
     text-align: center;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
 }
 
 .blog-post-img {
@@ -287,11 +328,90 @@ body {
 */
 
 .contact {
-    width: 500px;
+    width: 90%;
     margin: 0 auto;
 }
 
 .contact-form {
     margin-top: 40px;
+    width: 100%;
+}
+.input-text
+{
+    font-family: 'Roboto';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.textarea
+{
+    font-family: 'Roboto';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 70%;
+}
+.send-button
+{
+    display: block;
+    font-family: 'Helvetica';
+    background-color: #2ECC71;
 }
 
+
+@media (max-width: 1200px)
+ {
+    .column 
+    { width: 95%; }
+    .content-container 
+    {width:100%; text-align: center;  margin: 0 auto }
+    .picture-container 
+    {float:none; width:100%; margin: 0 auto;}
+    .avatar 
+    {position: relative; transform:none; margin: 0 auto;}
+    .name-container 
+    { width: 100% ;}
+    .name-job 
+    {width: 300px; }
+    .card-body
+    .info 
+    { margin: 0; width:100%; float:none;}
+    .info-list 
+    {padding: 0;}
+    .info-property 
+    { width: 100%; display: block;}
+    .subtitle 
+    {text-align: center; float:none; width:100%; margin: 0 auto;}
+    .timeline-item
+    {text-align: center; float:none; width:90%; margin: 10px auto; height:10%; }
+    .about-me 
+    {width:100%;text-align: center;}
+    .portfolio-img
+    { width:100%; }
+    .blog-post 
+    {width:90%;}
+    .blog-post-img
+    { width:100%; float:none;}
+    .timeline-container 
+    { float:none; width:100%; margin: 0 auto;}
+    .service-block 
+    { width:50%}
+    .services-client
+    {width:25%;}
+    .pricing-box
+    {width:50%;text-align: center; margin: 30px auto; float: none;}
+    .contact
+
+}
+
+@media (max-width: 500px) 
+{
+    .service-block 
+    {float: none; width:100%;}
+    .avatar 
+    {position: relative; transform:none;margin: 0 auto;}
+    .services-client
+    {float: none; width:70%;}
+    .pricing-box
+    {float: none; width:90%;}
+}
