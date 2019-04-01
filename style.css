@@ -12,6 +12,9 @@ body {
     src: url('fonts/Roboto-Regular.ttf');
     font-weight: normal;
 }
+
+
+
 .clear {
     clear: both;
 }
@@ -19,9 +22,9 @@ body {
 .column {
     width: 900px;
     margin: 0 auto;
-    position: relative;
+    /* position: relative;
     max-width: 900px;
-    min-width: 400px;
+    min-width: 400px; */
 }
 
 .card {
@@ -30,11 +33,18 @@ body {
     border-radius: 10px;
   
 }
-
-.card-header {
+.card-header1 {
     background-color: #2ECC71;
     padding: 20px;
     border-radius: 10px 10px 0 0;
+    
+  
+}
+.card-header {
+    background-color: #2ECC71;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    
   
 }
 
@@ -67,7 +77,10 @@ body {
     font-family: 'Helvetica';
     font-weight: 700;
     font-size: 24px;
+    
     text-align: left;
+    float: left;
+    position: relative;
 }
 
 .text {
@@ -83,12 +96,18 @@ body {
 
 .avatar {
     width: 200px;
-    position: relative;
+    position: absolute;
     border-radius: 200%;
+    text-align: center;
+    transform: translate(40px, 2px);
+    
+    
 }
 
 .picture-container {
     float: left;
+  
+
 
 }
 
@@ -116,18 +135,22 @@ body {
 .about-me {
     width: 400px;
     float: left;
+    positon: absolute;
+    text-align: left;
 }
 
 .description {
     font-family: Roboto;
     line-height: 25px;
     text-align: left;
+    position: relative;
+    float: left;
 }
 
 .info {
     width: 350px;
     float: left;
-    margin-left: 50px;
+    margin-left: 50px; 
 }
 
 .info-list {
@@ -140,12 +163,14 @@ body {
     width: 100px;
     font-family: 'Roboto';
     color: #424242;
+    text-align: left;
 }
 .info-value {
     display: inline-block;
     width: 180px;
     font-family: 'Roboto';
     color: #9E9E9E;
+    text-align: left;
 }
 
 
