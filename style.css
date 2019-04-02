@@ -1,32 +1,48 @@
 body {
+    background-image: url(img/background.jpg);
+    background-position: center;
     background-color: #f5f5F5;
 }
-
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+}
 .clear {
     clear: both;
 }
 
 .column {
-    width: 900px;
+    width: 80%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .card {
     margin: 40px 0;
+    box-shadow: 5px 14px 14px -5px rgb(0, 0, 0, 0.3);
+    border-radius: 0 0 15px 15px;
 }
 
 .card-header {
     background-color: #2ECC71;
     padding: 20px;
+    border-radius: 15px 15px 0 0;
 }
 
 .card-body {
     background-color: #FFF;
     padding: 40px 20px;
+    border-radius: 0 0 15px 15px;
 }
 
 .content-container {
-    width: 800px;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -59,17 +75,20 @@ body {
 
 .avatar {
     width: 200px;
-    position: relative;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-6px, 6px)
 }
 
 .picture-container {
     float: left;
 }
-
+  
 .name-container {
     float: right;
-    width: 600px;
+    width: 80%;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .name {
@@ -88,8 +107,9 @@ body {
 }
 
 .about-me {
-    width: 400px;
+    width: 50%;
     float: left;
+    box-sizing: border-box;
 }
 
 .description {
@@ -98,9 +118,10 @@ body {
 }
 
 .info {
-    width: 350px;
+    width: 42%;
     float: left;
     margin-left: 50px;
+    box-sizing: border-box;
 }
 
 .info-list {
@@ -130,14 +151,17 @@ body {
 
 .timeline-container {
     float: left;
-    width: 380px;
+    width: 50%;
     padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .timeline-item {
     padding: 15px 20px 10px;
     margin-bottom: 20px;
     border-left: 2px solid #2ECC71;
+    box-shadow: 0px 0px 6px 0px rgb(0, 0, 0, 0.3);
+    border-radius: 0 10px 10px 0;
 }
 
 .timeline-title {
@@ -171,10 +195,11 @@ body {
 .service-section-container {
     overflow: hidden;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .service-block {
-    width: 200px;
+    width: 25%;
     float: left;
     text-align: center;
     padding: 0 20px;
@@ -186,6 +211,8 @@ body {
     height: 120px;
     background-color: #FAFAFA;
     margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 5px 14px 14px -5px rgb(0, 0, 0, 0.3);
 }
 
 .service-img {
@@ -207,7 +234,7 @@ body {
 }
 
 .services-client {
-    width: 80px;
+    width: 9%;
     float: left;
     margin-left: calc(800px/12 - 40px);
     margin-right: calc(800px/12 - 40px); 
@@ -215,13 +242,14 @@ body {
 
 .pricing-box {
     border: 1px solid #E0E0E0;
-    width: calc(800px / 3 - 20px);
+    width: calc(100% / 3 - 20px);
     margin: 0 10px;
     float: left;
     box-sizing: border-box;
     margin-bottom: 20px;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 5px 14px 14px -5px rgb(0, 0, 0, 0.3);
 }
 
 .pricing-button {
@@ -249,10 +277,9 @@ body {
 */
 
 .portfolio-img {
-    width: calc(800px / 3 - 10px);
+    width: calc(100% / 3 - 10px);
     margin: 5px;
     float: left;
-    box-sizing: border-box;
 }
 
 
@@ -263,14 +290,17 @@ body {
 */
 
 .blog-post {
-    width: 360px;
+    width: 42%;
     float: left;
     margin: 20px;
     text-align: center;
+    box-shadow: 5px 6px 26px -5px rgb(0, 0, 0, 0.3);
+    border-radius: 0 0 15px 15px;
+    box-sizing: border-box;
 }
 
 .blog-post-img {
-    width: 360px;
+    width: 100%;
 }
 
 .blog-post-title {
@@ -285,13 +315,130 @@ body {
             CONTACT SECTION
 =========================================== 
 */
-
-.contact {
-    width: 500px;
+input, button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+.contact { 
+    width: 75%;
     margin: 0 auto;
 }
-
 .contact-form {
     margin-top: 40px;
+    width: 80%;
+}
+.input-text, .textarea {
+    font-family: 'roboto';
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #E0E0E0;
+    border-left: 45px solid rgba(224, 224, 224, 0.192);
+    color: #E0E0E0;
+    padding: 21px 0px 12px 17px;
+    margin: 15px 0px;
+}
+.textarea {
+    min-height: 200px;
+}
+.send-button {
+    background-color: #2ECC71;
+    border: none;
+    color: white;
+    font-family: 'Helvetica';
+    margin: 0 auto;
+    padding: 10px 25px;
+    display: block;
 }
 
+/* 
+===========================================
+            responsive
+=========================================== 
+*/
+@media (max-width: 1100px){
+    .column {
+        width: 95%;
+    }  
+}
+
+@media (max-width: 900px){ 
+    .about-me {
+        width: 100%;
+        clear: both;
+        text-align: center;
+    }
+    .avatar {
+        position: relative;
+        left: 34%;
+        transform: none;
+        margin: 0 auto;
+    }
+    .info {
+        width: 100%;
+        clear: both;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .info-property {
+        width: 100%;
+        display: block;
+    }
+    .info-value {
+        width: 100%;
+        display: block;
+    }
+    .picture-container {
+        clear: both;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }    
+    .blog-post {
+        clear: both;
+        width: 100%;
+    }
+    .portfolio-img {
+        clear: both;
+        width: 100%; 
+    }
+    .name-container {
+        clear: both;
+        width: 100%;
+    }
+    .content-container {
+        width: 90%;
+    }
+    .timeline-container {
+        clear: both;
+        width: 100%;
+    }
+    .timeline-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .subtitle {
+        text-align: center;
+    }
+    .service-block {
+        width: 50%;
+    }
+    .pricing-box {
+        margin: 32px auto;
+        float: none;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 500px){
+    .service-block {
+        width: 100%;
+    }
+    .services-client {
+        width: 100%;
+        float: none;
+        margin: none;
+}
