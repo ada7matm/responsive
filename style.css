@@ -346,7 +346,11 @@ input, textarea{
     padding: 10px 20px;
     text-decoration: none;
 }
-
+/* 
+===========================================
+            RESPONSIVE
+=========================================== 
+*/
 @media (max-width: 960px){
     .column{
         width: 95%;
