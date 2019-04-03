@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Roboto";
     src: url("Fonts/Roboto-Bold.ttf")
+    
 }
 
 @font-face {
@@ -30,7 +31,7 @@ body {
 }
 
 .card-header {
-    background-color: rgb(214, 99, 224);
+    background-color:#2ECC71;
     padding: 20px;
     position: relative;
     border-top-left-radius: 10px;
@@ -43,11 +44,11 @@ body {
     position: relative;   
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; 
-    height: 490px;
+    
 }
 
 .content-container {
-    width: 800px;
+    width: 95%;
     margin: auto;
     overflow: hidden;    
 }
@@ -112,7 +113,7 @@ body {
 }
 
 .about-me {
-    width: 400px;
+    width: 48%;
     float: left;
 }
 
@@ -130,11 +131,14 @@ body {
 .info-list {
     list-style: none;
     line-height: 25px;
+    text-align: center;
+    width: 100%;
+   
 }
 
 .info-property {
     display: inline-block;
-    width: 100px;
+    width: 34%;
     font-family: 'Roboto';
     color: #424242;
 }
@@ -154,7 +158,7 @@ body {
 
 .timeline-container {
     float: left;
-    width: 380px;
+    width: 47%;
     padding: 0 10px;
 }
 
@@ -236,7 +240,7 @@ body {
 }
 
 .services-client {
-    width: 80px;
+    width: 10%;
     float: left;
     margin-left: calc(800px/12 - 40px);
     margin-right: calc(800px/12 - 40px); 
@@ -331,10 +335,107 @@ body {
 }
 .input-text {
     width: 440px;
-    height: 16px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid grey;
+    border-left: 30px solid  rgb(235, 231, 231);
+    margin-bottom: 20px;
       
 }
 .textarea {
     width: 438px;
     height: 180px;
+    font-family: Roboto;
+    border: none;
+    border-bottom: 1px solid grey;
+    border-left: 30px solid rgb(235, 231, 231);
+}
+.send-button {
+    background: #2ECC71;
+    border: none;
+    color:#FFF;
+    margin-left: 200px;
+    margin-top: 20px;
+    height: 30px;
+    width: 80px;
+}
+@media(max-width:1000px) {
+    .avatar {
+    position: relative;
+    transform: translate(0);
+        }
+    .picture-container {
+    float: none;
+    }
+    .card-header {
+        text-align: center;
+    }
+    .name-container {
+    float: none;
+    text-align: center;
+    width: 100%;
+   
+    }
+    .about-me {
+        float: none;
+        text-align: center;
+        width: 100%;    
+    }
+    .info-list {
+        text-align:center;
+        display: block;
+       padding: 1px;          
+    }
+    .info-property {
+        display: block;
+        text-align: center;
+        width:100%;
+        margin: 0 auto;
+    }
+    .info-value {
+        display: block;
+        text-align: center;
+        width:100%;
+        margin: 0 auto;
+    }
+    .info {
+        float: none;
+        width:100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .timeline-item {
+        width: 90%;       
+    }
+    .timeline-container {
+        width: 100%;
+        text-align: center;
+    }
+    .service-section-container {
+        text-align: center;
+        
+    }
+    .service-block {
+        width: 50%;
+    }
+    .services-client {
+        width: 25%;
+    }
+    .pricing-box {
+        float: none;
+        margin: 30px auto;
+        width: 70%;
+    }
+    .portfolio-img {
+        float: none;
+        width: 100%;
+    }
+    .blog-post {
+        float: none;
+        width: 90%;
+    }
+    .blog-post-img {
+       width: 100%;
+}
+
 }
