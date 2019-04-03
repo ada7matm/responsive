@@ -1,5 +1,19 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
 body {
-    background-color: #f5f5F5;
+    background-image: url("img/background.jpg");
+    background-repeat: repeat;
 }
 
 .clear {
@@ -7,47 +21,67 @@ body {
 }
 
 .column {
-    width: 900px;
+    width: 80%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .card {
     margin: 40px 0;
+    box-shadow: 10px 10px 10px rgba(148, 92, 92, 0.3);
+    
+        
 }
 
 .card-header {
     background-color: #2ECC71;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: fit-content;
     padding: 20px;
 }
 
 .card-body {
     background-color: #FFF;
-    padding: 40px 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 2%
+    
+        
 }
 
 .content-container {
-    width: 800px;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
+    max-width: 800px;
+    
 }
 
 .title {
-    font-family: 'Helvetica';
-    font-weight: 700;
-    font-size: 48px;
+    font-family: 'Roboto'; 
+    font-weight: bold;
+    font-size: 54px;
     text-align: center;
     color: #FFF;
     margin: 30px 0 10px;
+    
 }
 
 .subtitle {
-    font-family: 'Helvetica';
-    font-weight: 700;
+    font-family:  'Roboto';
+    src: url(fonts/Roboto-Regular.ttf);
+    font-weight: bold;
     font-size: 24px;
+    margin: 30px 0 10px;
+    
 }
 
 .text {
     font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf);
+    font-weight: bold;
+    font-size: 15px;
 }
 
 
@@ -59,7 +93,11 @@ body {
 
 .avatar {
     width: 200px;
-    position: relative;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 0px;
+    transform: translateX(30px)
+
 }
 
 .picture-container {
@@ -68,13 +106,13 @@ body {
 
 .name-container {
     float: right;
-    width: 600px;
+    width: 70%;
     text-align: center;
 }
 
 .name {
-    font-family: 'Helvetica';
-    font-weight: 700;
+    font-family: 'Roboto';
+    font-weight: bold;
     font-size: 54px;
     color: #FFF;
     margin: 30px 0 10px;
@@ -85,40 +123,48 @@ body {
     font-weight: bold;
     font-size: 18px;
     color: #FFF;
+    margin: 20px 0 10px;
 }
 
 .about-me {
-    width: 400px;
+    margin: 30px auto;
+    width: 50%;
     float: left;
 }
 
 .description {
     font-family: 'Roboto';
+    font-weight: normal;
     line-height: 25px;
 }
 
 .info {
-    width: 350px;
+    width: 40%;
     float: left;
-    margin-left: 50px;
-}
+    margin: 30px 0 10px 30px;
+
+    }
 
 .info-list {
+    display: inline-block;
     list-style: none;
     line-height: 25px;
+    
+    
 }
 
 .info-property {
     display: inline-block;
-    width: 100px;
+    width: 30%;
     font-family: 'Roboto';
     color: #424242;
 }
 .info-value {
     display: inline-block;
-    width: 180px;
-    font-family: 'Roboto';
+    width: 60%;
+   font-family: 'Roboto';
     color: #9E9E9E;
+    margin-left: 10px;
 }
 
 
@@ -130,7 +176,7 @@ body {
 
 .timeline-container {
     float: left;
-    width: 380px;
+    width: 45%;
     padding: 0 10px;
 }
 
@@ -194,7 +240,7 @@ body {
 }
 
 .service-title {
-    font-family: 'Helvetica';
+    font-family: Roboto;
     font-size: 17px;
     line-height: 22px;
     margin-top: 40px;
@@ -249,7 +295,7 @@ body {
 */
 
 .portfolio-img {
-    width: calc(800px / 3 - 10px);
+    width: 30%;
     margin: 5px;
     float: left;
     box-sizing: border-box;
@@ -263,14 +309,14 @@ body {
 */
 
 .blog-post {
-    width: 360px;
+    width: 30%;
     float: left;
     margin: 20px;
     text-align: center;
 }
 
 .blog-post-img {
-    width: 360px;
+    width: 100%;
 }
 
 .blog-post-title {
@@ -287,11 +333,45 @@ body {
 */
 
 .contact {
-    width: 500px;
-    margin: 0 auto;
+    width: 80%;
+    margin: 40px auto;
 }
 
 .contact-form {
     margin-top: 40px;
 }
 
+.input-text {
+    font-family: 'Roboto';
+    font-size: 15px;
+    display: block;
+    width: 70%;
+    margin: 50px; 
+    border-bottom: solid 2px lightgrey;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+
+    
+}
+
+.text-area {
+    font-family: 'Roboto';
+    font-size: 15px;
+    display: block;
+    width: 70%;
+    margin: 50px; 
+    border-bottom: solid 2px lightgrey;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+}
+.send-button {
+    font-family: 'Roboto';
+    font-size: 15px;
+    display: block;
+    margin: 50px; 
+    background-color: #2ECC71
+}
