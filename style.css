@@ -1,5 +1,17 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+
 body {
-    background-color: #f5f5F5;
+    background-image: url("img/background.jpg");
 }
 
 .clear {
@@ -7,26 +19,30 @@ body {
 }
 
 .column {
-    width: 900px;
+    width: 75%;
     margin: 0 auto;
 }
 
 .card {
-    margin: 40px 0;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-header {
     background-color: #2ECC71;
     padding: 20px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card-body {
     background-color: #FFF;
     padding: 40px 20px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .content-container {
-    width: 800px;
+    width: 95%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -59,7 +75,9 @@ body {
 
 .avatar {
     width: 200px;
-    position: relative;
+    position: absolute;
+    transform: translate(30px);
+    border-radius: 50%;
 }
 
 .picture-container {
@@ -186,6 +204,8 @@ body {
     height: 120px;
     background-color: #FAFAFA;
     margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
 }
 
 .service-img {
@@ -215,6 +235,8 @@ body {
 
 .pricing-box {
     border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);
     width: calc(800px / 3 - 20px);
     margin: 0 10px;
     float: left;
@@ -263,19 +285,25 @@ body {
 */
 
 .blog-post {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
     width: 360px;
-    float: left;
     margin: 20px;
     text-align: center;
+    float: left;
+    display: block;
 }
 
 .blog-post-img {
-    width: 360px;
+    width: 100%;
+    text-align: center;
 }
 
 .blog-post-title {
     font-family: 'Helvetica';
     letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -289,9 +317,108 @@ body {
 .contact {
     width: 500px;
     margin: 0 auto;
-}
+    }
 
 .contact-form {
-    margin-top: 40px;
+    margin-top: 0 auto;
+    width: 100%;
 }
 
+.input-text {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 50px;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    border-left: 40px solid #fafafa;
+}
+
+.textarea {
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    padding: 10px 50px;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    border-left: 40px solid #fafafa;
+    font-family: 'Roboto';
+}
+
+.send-button {
+    color: white;
+    background-color: #2ECC71;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto; 
+    padding: 10px 20px;
+    display: block;
+}
+
+
+@media (max-width: 1200px) {
+    .name-container {
+        float: none;
+        text-align: center;
+    }
+    .avatar {
+        position: relative;
+        margin: none;
+        transform: translate(0);
+    }
+
+    .picture-container {
+        float: none;
+    }
+    .card-header {
+        text-align: center;
+    }
+
+    .content-container {
+        text-align: center;
+        float: none;
+            }
+
+    .about-me {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .info {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .timeline-container {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .service-block {
+        width: 50%;
+    }
+
+    .services-client {
+        width: 25%;
+    }
+
+    .pricing-box {
+        float: none;
+        width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .portfolio-img {
+        float: none;
+        width: 100%;
+    }
+
+    .blog-post {
+        float: none;
+        width: 100%;
+    }
+}

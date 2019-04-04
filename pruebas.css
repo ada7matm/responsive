@@ -1,0 +1,23 @@
+.column {
+    width: 80%;
+    margin: 0 auto;
+    background: rgb(163, 119, 119);
+    margin: 0 auto;
+    
+}
+
+.rectángulo-1 {
+    width: 300px;
+    height: 200px;
+    background: red;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.rectángulo-2 {
+    width: 300px;
+    height: 200px;
+    background: blue;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
