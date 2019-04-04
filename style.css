@@ -21,14 +21,14 @@ body {
 }
 
 .column {
-    width: 80%;
+    width: 90%;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .card {
     margin: 40px 0;
-    box-shadow: 10px 10px 10px rgba(148, 92, 92, 0.3);
+    box-shadow: 15px 15px 15px rgba(78, 78, 78, 0.6);
     
         
 }
@@ -61,7 +61,7 @@ body {
 .title {
     font-family: 'Roboto'; 
     font-weight: bold;
-    font-size: 54px;
+    font-size: 52px;
     text-align: center;
     color: #FFF;
     margin: 30px 0 10px;
@@ -184,6 +184,11 @@ body {
     padding: 15px 20px 10px;
     margin-bottom: 20px;
     border-left: 2px solid #2ECC71;
+    border-bottom: 2px solid rgb(211, 211, 211);
+    border-right: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
+    border-radius: 0px 10px 10px 0; 
+
 }
 
 .timeline-title {
@@ -220,7 +225,7 @@ body {
 }
 
 .service-block {
-    width: 200px;
+    width: 25%;
     float: left;
     text-align: center;
     padding: 0 20px;
@@ -232,11 +237,14 @@ body {
     height: 120px;
     background-color: #FAFAFA;
     margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 4px 4px 7px rgb(211, 211, 211, 0.6)
 }
 
 .service-img {
     height: 64px;
     margin: 28px 0;
+    
 }
 
 .service-title {
@@ -253,21 +261,22 @@ body {
 }
 
 .services-client {
-    width: 80px;
+    width: 12%;
     float: left;
-    margin-left: calc(800px/12 - 40px);
-    margin-right: calc(800px/12 - 40px); 
+    margin-left: 17px;
+    margin-right: 17px; 
 }
 
 .pricing-box {
     border: 1px solid #E0E0E0;
-    width: calc(800px / 3 - 20px);
+    width: 30%;
     margin: 0 10px;
     float: left;
     box-sizing: border-box;
     margin-bottom: 20px;
     padding: 20px 0;
     text-align: center;
+    box-shadow: -4px 4px 7px rgb(211, 211, 211, 0.6)
 }
 
 .pricing-button {
@@ -309,10 +318,13 @@ body {
 */
 
 .blog-post {
-    width: 30%;
+    width: 43%;
     float: left;
     margin: 20px;
     text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 2px #424242
 }
 
 .blog-post-img {
@@ -322,6 +334,7 @@ body {
 .blog-post-title {
     font-family: 'Helvetica';
     letter-spacing: 1px;
+    
 }
 
 
@@ -333,36 +346,40 @@ body {
 */
 
 .contact {
-    width: 80%;
-    margin: 40px auto;
+    width: 90%;
+    margin: 20px auto;
 }
 
 .contact-form {
     margin-top: 40px;
+    text-align: center;
 }
 
 .input-text {
     font-family: 'Roboto';
-    font-size: 15px;
+    font-size: 12px;
     display: block;
     width: 70%;
-    margin: 50px; 
-    border-bottom: solid 2px lightgrey;
+    margin: 10px auto; 
+    padding: 20px 40px;
+    border-bottom: solid 1px lightgrey;
     border-left: none;
     border-top: none;
     border-right: none;
     background-color: transparent;
+    
 
     
 }
 
-.text-area {
+.textarea {
     font-family: 'Roboto';
-    font-size: 15px;
+    font-size: 12px;
     display: block;
     width: 70%;
-    margin: 50px; 
-    border-bottom: solid 2px lightgrey;
+    height: 200px;
+    margin: 30px auto; 
+    border-bottom: solid 1px lightgrey;
     border-left: none;
     border-top: none;
     border-right: none;
@@ -370,8 +387,179 @@ body {
 }
 .send-button {
     font-family: 'Roboto';
+    color: white;
+    padding: 5px 10px;
     font-size: 15px;
     display: block;
-    margin: 50px; 
-    background-color: #2ECC71
+    margin: 50px auto; 
+    background-color: #2ECC71;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* ________________________________________________________________________________________________
+___________________________________________________________________________________________________
+ACÁ EMPIEZA MEDIA Q MAX WIDTH 960PX
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+*/
+
+
+
+
+
+@media (max-width: 960px) {
+
+/* 
+===========================================
+            ABOUT SECTION
+=========================================== 
+*/
+
+    .avatar {
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: static;
+    text-align: center    
+        
+    }
+
+
+
+.picture-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%
+}
+
+.name-container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+   
+}
+
+
+.about-me {
+    margin: 30px auto;
+    width: 100%;
+    text-align: center
+    
+}
+
+.subtitle {
+    margin: 20px auto;
+    text-align: center
+}
+
+.description {
+    margin: 0 auto;
+}
+
+.info {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center
+        }
+
+.info-list {
+    
+    margin: 0 auto;
+    display: block;
+    text-align: center
+    
+}
+
+.info-property {
+    margin: 0 auto;
+    display: block;
+    text-align: center
+}
+.info-value {
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* 
+===========================================
+            RESUME SECTION
+=========================================== 
+*/
+
+.timeline-container {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+/* 
+===========================================
+            SERVICES SECTION
+=========================================== 
+*/
+
+.service-section-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%
+}
+
+.service-block {
+    width: 50%;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+
+.service-img-container {
+    width: 100%;
+    background-color: #FAFAFA;
+    margin: 0 auto;
+}
+
+
+.pricing-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.services-client {
+    width: 33%;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box
+}
+
+/* 
+===========================================
+            PORTFOLIO SECTION
+=========================================== 
+*/
+
+
+    .portfolio-img {
+        width: 100%;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    .blog-post {
+        width: 100%;
+        margin: 20px;
+        text-align: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 0px 2px #424242
+    }
+    
 }
